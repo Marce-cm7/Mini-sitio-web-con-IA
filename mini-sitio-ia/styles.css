@@ -1,0 +1,124 @@
+
+body{
+    background-color: aliceblue; /*Color de fondo*/
+}
+.navbar-disney {
+    background-color: pink; /*Color fondo del navbar*/
+}
+
+h3{
+    text-align: center; /*Centra ek texto*/
+    font-size: 35px; /*Tamaño de la letra*/
+    font-family: fantasy; /*Tipo de letra*/
+}
+
+h1,h2{ /*Aprendí que puedo seleccionar más de un elemento para aplicarles las clases utilizando la coma ,*/
+    font-size: 50px; /**/
+    font-family: fantasy;
+}
+
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*muchas fuentes ya que no todas las computadoras tienen instaladas las mismas fuentes*/
+    font-size: 18px;
+}
+
+.card-parque { /*card con efecto que gira*/
+    width: 350px; /*ancho de la card*/
+    height: 400px; /*Altura de la card*/
+    position: relative; /*relative: "este elemento será utilizado como referencia para posicionar elementos que estén dentro de él".*/
+    margin: auto; /*centra horizontalmente la card dentro del espacio disponible.*/
+    
+    transform-style: preserve-3d; /*Los elementos hijos de esta card deben mantener un espacio tridimensional*/
+    transition: transform 0.6s; /*hace que el giro de la card sea suave*/
+}
+
+.card-front, /*Estoy aplicando las mismas propiedades a las dos caras de la card, me ahorro repetir código*/
+.card-back {
+    width: 100%; /*Ocupa el 100% del ancho de su elemento padre, o sea --> .card-parque*/
+    height: 100%; /*Ocupa el 100% de altura de su elemento padre*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    position: absolute; /*permite colocar las dos caras de la card exactamente una encima de la otra.*/
+    backface-visibility: hidden; /*Cuando esta cara esté mirando hacia atrás, no la muestres. Hidden: oculta*/
+
+    border: 1px solid rgb(222, 226, 230); /*Crea el borde de la card: grosor, línea contínua, color*/
+    border-radius: 15px; /*Redondea las esquinas de la card*/
+    box-sizing: border-box; /*ancho total seguirá siendo 100%. Esto evita que el borde haga crecer inesperadamente la card.*/
+}
+
+.card-back { /**/
+    transform: rotateY(180deg); /*Empieza el movimiento del giro de la ard: gira el elemento 180º sobre el eje Y*/
+}
+
+/*El código más importante del efecto de la card*/
+ /*Cuando el checkbox esté seleccionado, gira la card 180 grados."*/
+
+input:checked + label .card-parque {
+    transform: rotateY(180deg); /*hace que la card gire.*/
+}
+ /*input:checked --> El input está seleccionado.
+ + label --> Busca el label que está inmediatamente después
+ .card-parque --> Dentro de ese label, busca .card-parque*/
+
+
+
+input {
+    display: none; /*Esto oculta el checkbox.
+    
+    Pero el checkbox sigue existiendo y puede cambiar entre seleccionado/no seleccionado*/
+}
+
+.card-front img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-front {
+    text-align: center;
+    background-color: white;
+    overflow: hidden;
+}
+
+.card-back {
+    padding: 25px;
+    text-align: center;
+    background-color: white;
+}
+
+.card{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     width: 18rem;
+    height: 430px;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 100%;
+}
+
+.card-body .btn {
+     margin-top: auto;
+    width: 80px;
+    align-self: center;
+    background-color: rgb(230, 192, 236);
+    border-color: rgb(222, 174, 241);
+    color: black;
+}
+
+footer{
+    padding: 30px;
+    text-align: center;
+}

@@ -12,9 +12,9 @@
 
    <!-- Aquí quiero poner de JS un alert para que el usaurio conteste unas preguntas-->
     
-<!--Navbar sacado de Bootsrap-->
+<!--Navbar extraído de Bootsrap con personalización propia-->
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg navbar-disney">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Te recomiendo...</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,22 +45,105 @@
 
 <br>
 <br>
+
 <section class="container text-center">
 <h1>¿Disneyland o Disney California Adventure Park?</h1>
 <br>
-<h4>¿No sabes cual parque visitar primero? 
-  <p>Te dejo mis mejores recomendaciones en cuanto a las atracciones de los dos parques que hay en Anaheim<p/>
+<p> 🏰 🧚🏻‍♀️​✨​🎡​</p>
 <br>
-</section>
+  <p>Hay muchísimo por descubrir en Disney, pero <strong>¿no sabes qué visitar?</strong> Aquí te cuento cuáles son mis atracciones y tierras temáticas favoritas de los dos parques en Anaheim.¡Prepárate para descubrir mis imperdibles!<p/>
+<br>
+  </section>
 
-<!--2 imágenes de cada parque con texto para que el usuario pueda dar clic y llevarlo directamente a la sección de la página-->
+<!--Dos Parques, dos experiencias -->
+
+<section>
+
+  <section class="container text-center">
+    <h3>✨Dos parques, dos experiencias ✨</h3>
+
+    <p> Aunque están uno frente al otro, cada parque tiene una experiencia
+        completamente diferente. <br>¡Voltea las cards y descubre cuál va más contigo!</p>
+  </section>
+
+<br>
+<br>
+    <div class="container">
+        <div class="row">
+
+            <!-- CARD DISNEYLAND -->
+
+            <div class="col-md-6 d-flex justify-content-center">
+<input type="checkbox" id="disneyland">
+<label for="disneyland">
+    <div class="card-parque">
+
+        <!-- PARTE DELANTERA DE LA CARD 1-->
+
+        <div class="card-front">
+          <h4>Disneyland Park</h4>
+            <p>La magia clásica de Disney</p>
+            <img src="assets/Card -Disneyland.webp" class="card-img-top imagen-parque" alt="Disneyland Park">
+            <p class="click-card">👆 Haz clic para descubrir más</p>
+        </div>
+
+        <!-- PARTE TRASERA DE LA CARD 1-->
+
+        <div class="card-back">
+            <h4>Si te gusta...</h4>
+            <p>✨ Magia clásica de Disney</p>
+            <p>🏰 Fantasyland</p>
+            <p>🌌 Star Wars: Galaxy's Edge</p>
+            <p>🎢 Atracciones clásicas</p>
+            <p>Este es ideal si es tu primera visita y quieres vivir la experiencia más clásica de Disney.</p>
+        </div>
+    </div>
+</label>
+ </div>
+
+ <!-- CARD DISNEY CALIFORNIA ADVENTURE PARK -->
+
+            <div class="col-md-6 d-flex justify-content-center">
+<input type="checkbox" id="california">
+<label for="california">
+    <div class="card-parque">
+
+        <!-- PARTE DELANTERA DE LA CARD 2 -->
+
+        <div class="card-front">
+          <h4>Disney California Adventure Park</h4>
+            <p>Una experiencia más moderna</p>
+            <img src="assets/card-disney-california.avif"
+                 alt="Disney California Adventure">
+            <p class="click-card">👆 Haz clic para descubrir más</p>
+        </div>
+      
+        <!-- PARTE TRASERA DE LA CARD 2-->
+
+        <div class="card-back">
+            <h4>Si te gusta...</h4>
+            <p>🎬 Pixar</p>
+            <p>🦸 Avengers Campus</p>
+            <p>🚗 Cars Land</p>
+            <p>🎢 Atracciones más intensas</p>
+            <p>Este parque es ideal si te gustan Pixar, Marvel, Cars y las emociones fuertes.</p>
+        </div>
+    </div>
+</label>
+</div>      
+</div>
+</div>      
 
 <!--Primer parque : Disneyland Park-->
+<br>
+<br>
 <div class="container w-75">
-<h2>Disneyland</h2>
-<p>Aquí encontrarás pura magia y nostalgia. Es el parque original donde puedes cruzarte con tus personajes favoritos, subirte a clásicos inolvidables como Space Mountain, explorar el universo de Star Wars y emocionarte con los fuegos artificiales frente al castillo. ¡El lugar perfecto para volver a ser niño!</p>
+<h2 classs="text-center">Disneyland</h2>
+<p>
+  <strong>¡Aquí comenzó todo!</strong> Es el parque original de Walt Disney y abrió en 1955.<br>
+Aquí encontrarás pura magia y nostalgia. Puedes cruzarte con tus personajes favoritos, subirte a clásicos inolvidables como Space Mountain, explorar el universo de Star Wars y emocionarte con los fuegos artificiales frente al castillo. ¡El lugar perfecto para volver a ser niño!</p>
  
-<!--Slide Disneyland sacado de bootstrap-->
+<!--Slide Disneyland extraído de bootstrap con personalización propia-->
 
 <div id="carouselDisneyland" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
@@ -85,10 +168,12 @@
 </div>
 
 <br>
+<br>
+<h3>Las atracciones que no te puedes perder</h3>
+<br>
+<br>
 
-<h2>Las atracciones que no te puedes perder</h2>
-
-<!--Cards atracciones-->
+<!--Cards atracciones Disneyland-->
 
 <div class="container text-center">
   <div class="row">
@@ -117,7 +202,7 @@
   <img src="assets/starwars-rise of the resis.jpg" class="card-img-top" alt="Atracción Star Wars">
   <div class="card-body">
     <h5 class="card-title">Star Wars: Rise of the Resistance</h5>
-    <p class="card-text">De mis favoritas si eres fan de Star Wars, se siente como estar dentro de la película</p>
+    <p class="card-text">Si eres fan de Star Wars, se siente como estar dentro de la película</p>
     <a href="https://www.youtube.com/watch?v=dUwFxXBrr7s" class="btn btn-primary">Video</a>
   </div>
 </div>
@@ -128,9 +213,11 @@
  <br>
  <br>
 
-<!--Segunda Fila cards tierras temáticas-->
+<!--Cards tierras temáticas Disneyland-->
 
-<h2>Tierras temáticas</h2>
+<h3>Tierras temáticas</h3>
+<br>
+<br>
 <div class="container text-center">
   <div class="row">
     <div class="col">
@@ -168,7 +255,10 @@
 </div>
  <br>
  <br>
+ <br>
+
 <!--Segundo parque-->
+
 <div class="container w-75">
 <h2>Disney California Adventure Park</h2>
 <p>Este parque es pura adrenalina y diversión moderna. Aquí te metes de lleno en el mundo de los Avengers para entrenar con superhéroes, viajas a la ruta 66 en Cars Land y disfrutas de atracciones increíbles en Pixar Pier. ¡Tiene un ambiente enérgico que te va a fascinar!</p>
@@ -199,7 +289,9 @@
 
 <br>
 <br>
-<h2>Las atracciones a las cuales si o si te tienes que subir</h2>
+<h3>Las atracciones a las cuales si o si te tienes que subir</h3>
+<br>
+<br>
 
 <!--Cards atracciones Disney California Adventure Park-->
 
@@ -241,9 +333,11 @@
  <br>
  <br>
 
-<!--Segunda Fila cards tierras temáticas-->
+<!--Cards tierras temáticas Disney California Adventure Park-->
 
-<h2>Tierras temáticas</h2>
+<h3>Tierras temáticas</h3>
+<br>
+<br>
 
 <div class="container text-center">
   <div class="row">
@@ -283,7 +377,7 @@
  <br>
  <br>
 
-<footer>
+<footer class="navbar-disney">
 <p>© 2026 Recomendando con Marce</p>
 </footer>
 
