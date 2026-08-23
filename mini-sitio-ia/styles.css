@@ -88,7 +88,7 @@ input {
 
 .card{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-     width: 18rem; /*rem en lugar de px. 1rem=6px */
+     width: 100%; /*Ocupa el 100% del ancho disponible de tu elemento padre*/
     height: 430px; /*Altura: esto ayuda a que todas las card tengan el mismo tamaño aunque tengan diferente cantidad de contenido.*/
 }
 
@@ -146,5 +146,29 @@ footer {
     margin-bottom: 8px; /*Agrega 8px de separación debajo de cada enlace.*/
     color: black; /*Aquí cambiamos a color negro el enlace, antes era azulte*/
     font-size: 12px; /*Tamaño de letra*/
+
+}
+
+/*@media --> Hace responsive el sitio. El contenido se adapta a mobile, tablet...*/
+/* @media: Quiere decir, aplica ciertos estilos solamente cuando se cumpla una determinada condición de pantalla.*/
+@media (max-width: 768px) { /*Quiero aplicar ciertos estilos solamente cuando se cumpla una determinada condición de pantalla. se aplicará principalmente a pantallas pequeñas, como celulares.*/
+
+    h1, h2 { /*reemplazo temporal" para pantallas pequeñas*/
+        font-size: 35px;
+    }
+
+    h3 { /* hace que los textos grandes sean un poquito más pequeños cuando hay menos espacio.*/
+        font-size: 28px;
+    }
+
+    .card-parque {
+        width: 300px; /*Esto evita que las cards giratorias ocupen demasiado espacio en el teléfono.*/
+        height: 400px;
+    }
+
+    .footer-container { 
+        flex-direction: column; /*Ahora quiero que los elementos se acomoden verticalmente.*/
+        gap: 25px; /*espacio entre los elementos de Flexbox.*/
+    }
 
 }
