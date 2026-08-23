@@ -12,11 +12,11 @@
 
    <!-- Aquí quiero poner de JS un alert para que el usaurio conteste unas preguntas-->
     
-<!--Navbar-->
+<!--Navbar sacado de Bootsrap-->
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Disney</a>
+    <a class="navbar-brand" href="#">Te recomiendo...</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -24,14 +24,6 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-        </li>
-       
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Tierras temáticas</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Atracciones</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -63,30 +55,236 @@
 
 <!--2 imágenes de cada parque con texto para que el usuario pueda dar clic y llevarlo directamente a la sección de la página-->
 
+<!--Primer parque : Disneyland Park-->
+<div class="container w-75">
 <h2>Disneyland</h2>
-<img src="assets/Disneyland.jpg" alt="">
 <p>Aquí encontrarás pura magia y nostalgia. Es el parque original donde puedes cruzarte con tus personajes favoritos, subirte a clásicos inolvidables como Space Mountain, explorar el universo de Star Wars y emocionarte con los fuegos artificiales frente al castillo. ¡El lugar perfecto para volver a ser niño!</p>
+ 
+<!--Slide Disneyland sacado de bootstrap-->
+
+<div id="carouselDisneyland" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="2000">
+      <img src="assets/Mickey-disneyland.webp" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="assets/Entrada-Disneyland.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/personajes-Disneyland.webp" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselDisneyland" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselDisneyland" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
 <br>
 
 <h2>Las atracciones que no te puedes perder</h2>
 
+<!--Cards atracciones-->
 
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+<div class="card" style="width: 18rem;">
+  <img src="assets/space-mountain.jpg" class="card-img-top" alt="Atracción Space Mountain">
+  <div class="card-body">
+    <h5 class="card-title">Space Mountain</h5>
+    <p class="card-text">Una montaña rusa a oscuras que está buenísima si te gustan las emociones fuertes</p>
+    <a href="https://www.youtube.com/watch?v=Omh0Rr3rSBk" class="btn btn-primary">Video</a>
+  </div>
+</div>
+    </div>
+    <div class="col">
+<div class="card" style="width: 18rem;">
+  <img src="assets/Big_Thunder_Mountain_Train.jpg" class="card-img-top" alt="Atracción Big Thunder Mountain Railroad">
+  <div class="card-body">
+    <h5 class="card-title">Big Thunder Mountain Railroad</h5>
+    <p class="card-text">Una montaña rusa divertida y rápida, perfecta para pasarla bien</p>
+    <a href="https://www.youtube.com/watch?v=dVEN1AnDbM0" class="btn btn-primary">Video</a>
+  </div>
+</div>
+    </div>
+    <div class="col">
+<div class="card" style="width: 18rem;">
+  <img src="assets/starwars-rise of the resis.jpg" class="card-img-top" alt="Atracción Star Wars">
+  <div class="card-body">
+    <h5 class="card-title">Star Wars: Rise of the Resistance</h5>
+    <p class="card-text">De mis favoritas si eres fan de Star Wars, se siente como estar dentro de la película</p>
+    <a href="https://www.youtube.com/watch?v=dUwFxXBrr7s" class="btn btn-primary">Video</a>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
 
+ <br>
+ <br>
 
+<!--Segunda Fila cards tierras temáticas-->
+
+<h2>Tierras temáticas</h2>
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+<div class="card" style="width: 18rem;">
+  <img src="assets/fantasyland.jpg" class="card-img-top" alt="Tierra FantasyLand">
+  <div class="card-body">
+    <h5 class="card-title">FantasyLand</h5>
+    <p class="card-text">Un lugar súper bonito y clásico, especialmente si te encanta Disney</p>
+    <a href="https://www.youtube.com/watch?v=YVSo5McsK88" class="btn btn-primary">Video</a>
+  </div>
+</div>
+    </div>
+    <div class="col">
+<div class="card" style="width: 18rem;">
+  <img src="assets/star wars galayxs edge.jpg" class="card-img-top" alt="Tierra Star Wars">
+  <div class="card-body">
+    <h5 class="card-title">Star Wars: Galaxy´s Edge</h5>
+    <p class="card-text">Se siente como entrar directamente al universo de Star Wars</p>
+    <a href="https://www.youtube.com/watch?v=3ZhYHheYadQ" class="btn btn-primary">Video</a>
+  </div>
+</div>
+    </div>
+    <div class="col">
+<div class="card" style="width: 18rem;">
+  <img src="assets/tomorrowland.webp" class="card-img-top" alt="Tierra Tomorrowland">
+  <div class="card-body">
+    <h5 class="card-title">Tomorrowland</h5>
+    <p class="card-text">Ideal para los que disfrutan de la tecnología, el espacio y un ambiente futurista.</p>
+    <a href="https://www.youtube.com/watch?v=XlcY_QRblFA" class="btn btn-primary">Video</a>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+ <br>
+ <br>
 <!--Segundo parque-->
-
+<div class="container w-75">
 <h2>Disney California Adventure Park</h2>
-<img src="assets/disney-california-adventure-.jpg" alt="">
 <p>Este parque es pura adrenalina y diversión moderna. Aquí te metes de lleno en el mundo de los Avengers para entrenar con superhéroes, viajas a la ruta 66 en Cars Land y disfrutas de atracciones increíbles en Pixar Pier. ¡Tiene un ambiente enérgico que te va a fascinar!</p>
+
+<!--Slide Disney California Adventure Park sacado de bootstrap-->
+
+<div id="carouselCaliforniaAdventure" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="2000">
+      <img src="assets/Disney cal-adv-park.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="assets/disney calif adv park.webp" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/disney california pixar pier.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaliforniaAdventure" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselCaliforniaAdventure" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<br>
 <br>
 <h2>Las atracciones a las cuales si o si te tienes que subir</h2>
 
+<!--Cards atracciones Disney California Adventure Park-->
 
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+<div class="card" style="width: 18rem;">
+  <img src="assets/Incredicoaster.jpg" class="card-img-top" alt="Atracción Incredicoaster">
+  <div class="card-body">
+    <h5 class="card-title">Incrediscoaster</h5>
+    <p class="card-text">Definitivamente mi favorita. Súper rápida y emocionante</p>
+    <a href="https://www.youtube.com/watch?v=L_VcRlkVL44" class="btn btn-primary">Video</a>
+  </div>
+</div>
+    </div>
+    <div class="col">
+<div class="card" style="width: 18rem;">
+  <img src="assets/radiator springs racer.jpg" class="card-img-top" alt="Atracción Radiator Springs Racers">
+  <div class="card-body">
+    <h5 class="card-title">Radiator Springs Racers</h5>
+    <p class="card-text">Una carrera por Radiator Springs que se disfruta muchísimo</p>
+    <a href="https://www.youtube.com/watch?v=NkJRM55tujM" class="btn btn-primary">Video</a>
+  </div>
+</div>
+    </div>
+    <div class="col">
+<div class="card" style="width: 18rem;">
+  <img src="assets/guardians of the galaxy mission breakout.jpg" class="card-img-top" alt="Atracción Mission: BREAKOUT de Guardians of the Galaxy">
+  <div class="card-body">
+    <h5 class="card-title">Guardians of the galaxy - Mission: BREAKOUT!</h5>
+    <p class="card-text">Caídas, música y mucha diversión; esta sí te saca un buen grito</p>
+    <a href="https://www.youtube.com/watch?v=WLSH_5WAGIw" class="btn btn-primary">video</a>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
 
+ <br>
+ <br>
 
+<!--Segunda Fila cards tierras temáticas-->
+
+<h2>Tierras temáticas</h2>
+
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+<div class="card" style="width: 18rem;">
+  <img src="assets/cars land.jpg" class="card-img-top" alt="Tierra Cars Land">
+  <div class="card-body">
+    <h5 class="card-title">Cars Land</h5>
+    <p class="card-text">Todo parece sacado de la película y está increíble para recorrerlo</p>
+    <a href="#" class="btn btn-primary">Video</a>
+  </div>
+</div>
+    </div>
+    <div class="col">
+<div class="card" style="width: 18rem;">
+  <img src="assets/avengers campus.png" class="card-img-top" alt="Tierra Avengers Campus">
+  <div class="card-body">
+    <h5 class="card-title">Avengers Campus</h5>
+    <p class="card-text">Si te gustan los superhéroes, este lugar es parada obligatoria.</p>
+    <a href="#" class="btn btn-primary">Video</a>
+  </div>
+</div>
+    </div>
+    <div class="col">
+<div class="card" style="width: 18rem;">
+  <img src="assets/pixar pier.jpg" class="card-img-top" alt="Tierra Pixar Pier">
+  <div class="card-body">
+    <h5 class="card-title">Pixar Pier</h5>
+    <p class="card-text">Un lugar muy divertido y colorido, perfecto si eres fan de Pixar</p>
+    <a href="#" class="btn btn-primary">Video</a>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+ <br>
+ <br>
 
 <footer>
-<p>© Oh Disney 2026 <br> Todos los derechos reservado</p>
+<p>© 2026 Recomendando con Marce</p>
 </footer>
 
 <script src="app.js"></script>
