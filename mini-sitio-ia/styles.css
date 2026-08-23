@@ -13,7 +13,7 @@ h3{
 }
 
 h1,h2{ /*Aprendí que puedo seleccionar más de un elemento para aplicarles las clases utilizando la coma ,*/
-    font-size: 50px; /**/
+    font-size: 50px; 
     font-family: fantasy;
 }
 
@@ -68,28 +68,28 @@ input {
     Pero el checkbox sigue existiendo y puede cambiar entre seleccionado/no seleccionado*/
 }
 
-.card-front img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
+.card-front img { /*Esto selecciona las imágenes que están dentro de .card-front.*/
+    width: 100%; /*La imagen ocupa todo el ancho disponible.*/
+    height: 250px; /*La imagen tendrá 250px de alto.*/
+    object-fit: cover; /*Hace que la imagen cubra completamente el espacio indicado sin deformarse.*/
 }
 
 .card-front {
-    text-align: center;
-    background-color: white;
-    overflow: hidden;
+    text-align: center; /*Centra el texto*/
+    background-color: white; /*Color dle fondo*/
+    overflow: hidden; /*Si algo se sale de los límites de la card, lo esconde*/
 }
 
-.card-back {
-    padding: 25px;
+.card-back { /*Parte trasera de la card*/
+    padding: 25px; /*Espacio interno*/
     text-align: center;
     background-color: white;
 }
 
 .card{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-     width: 18rem;
-    height: 430px;
+     width: 18rem; /*rem en lugar de px. 1rem=6px */
+    height: 430px; /*Altura: esto ayuda a que todas las card tengan el mismo tamaño aunque tengan diferente cantidad de contenido.*/
 }
 
 .card-img-top {
@@ -98,27 +98,53 @@ input {
 }
 
 .card-title {
-    font-weight: 600;
+    font-weight: 600; /*Controla grosor de la letra*/
 }
 
 
 .card-body {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    height: 100%;
+    display: flex; /*Activa Flexbox: sistema para organizar elementos*/
+    flex-direction: column; /*Le dice a Flexbox: organiza los elementos verticalmente.*/
+    gap: 15px; /*separación entre los elementos. Forma muy cómoda de separar elementos cuando utilizas Flexbox*/
+    height: 100%; /*Le dice a .card-body: intenta ocupar toda la altura disponible.*/
 }
 
-.card-body .btn {
-     margin-top: auto;
-    width: 80px;
-    align-self: center;
-    background-color: rgb(230, 192, 236);
-    border-color: rgb(222, 174, 241);
-    color: black;
+.card-body .btn { /*Selector conbinado: busca un elemento que tenga la clase .btn y que esté dentro de .card-body*/
+     margin-top: auto; /*Utiliza todo el espacio vertical disponible antes de este elemento."*/
+    width: 80px; /*botón tenga 80px de ancho*/
+    align-self: center; /*El botón se alínea por si mismo en el centro*/
+    background-color: rgb(230, 192, 236); /*color de fondo del botón: red, green, blue (rgb)*/
+    border-color: rgb(222, 174, 241); /*color del borde del botón.*/
+    color: black; /*color del texto boton.*/
 }
 
-footer{
-    padding: 30px;
-    text-align: center;
+footer {
+    padding: 30px; /*espacio interno de un elemento. Deja 30 píxeles de espacio entre el contenido y los bordes del footer.*/
+    text-align: center; /*Centra el texto*/
+}
+
+.footer-container {
+    display: flex; /*Activa Flexbox (sirve para organizar elementos) los elementos hijos se colocan uno junto al otro: decide cómo se distribuyen los elementos*/
+    justify-content: center; /*Pone todos los elementos en el centro.*/
+    gap: 50px; /*crea espacio entre las columnas: Inicio Parques Atracciones Tierras*/
+    margin-bottom: 30px; /*espacio fuera del elemento: deja 30px de espacio debajo de .footer-container*/
+}
+
+.footer-column { /*Esta clase corresponde a cada columna individual.*/
+    display: flex; /*Activamos Flexbox otra vez*/
+    flex-direction: column; /*Los elementos queden uno debajo del otro, en lugar de quedar en una sola línea.*/
+    
+}
+
+.footer-column h4 {
+    margin-bottom: 15px; /*Deja 15px de espacio debajo del título.*/
+    font-size: 17px; /*tamaño de letra*/
+}
+
+.footer-column a { /*Controla los enlaces de cada columna:*/
+    text-decoration: none; /*Esta propiedad elimina lo subrayado debajo del texto del enlace:*/
+    margin-bottom: 8px; /*Agrega 8px de separación debajo de cada enlace.*/
+    color: black; /*Aquí cambiamos a color negro el enlace, antes era azulte*/
+    font-size: 12px; /*Tamaño de letra*/
+
 }

@@ -8,46 +8,64 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-
-   <!-- Aquí quiero poner de JS un alert para que el usaurio conteste unas preguntas-->
     
 <!--Navbar extraído de Bootsrap con personalización propia-->
 
 <nav class="navbar navbar-expand-lg navbar-disney">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Te recomiendo...</a>
+    <a class="navbar-brand" href="#">Marce recomienda...</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <!--Inicio-->
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
         </li>
+        <!--Parques-->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Parques
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Disneyland</a></li>
-            <li><a class="dropdown-item" href="#">Disney California Adventure Park</a></li>
+            <li><a class="dropdown-item" href="#disneyland-park">Disneyland</a></li>
+            <li><a class="dropdown-item" href="#Disney-california-adventure">Disney California Adventure Park</a></li>
           </ul>
         </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
-      </form>
-    </div>
-  </div>
+
+      <!--Dupliqué el dropdown menu y solo personalicé el contenido-->
+
+      <!--Atracciones-->
+<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Atracciones
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#atracciones-disneyland">Disneyland</a></li>
+            <li><a class="dropdown-item" href="#atracciones-disney-california">Disney California Adventure Park</a></li>
+          </ul>
+        </li>
+ <!--Tierras temáticas-->
+ <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tierras temáticas
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#tierras-disneyland">Disneyland</a></li>
+            <li><a class="dropdown-item" href="#tierras-disney-california">Disney California Adventure Park</a></li>
+          </ul>
+        </li>    
+    </div> <!--cierra el navbar collapse-->
+  </div> <!--cierra container fluid-->
 </nav>
 
 <br>
 <br>
 
-<section class="container text-center">
-<h1>¿Disneyland o Disney California Adventure Park?</h1>
+<section class="container text-center" id="inicio">
+<h1>¿Que parque de Disney en California Visitar?</h1>
 <br>
 <p> 🏰 🧚🏻‍♀️​✨​🎡​</p>
 <br>
@@ -137,7 +155,7 @@
 <!--Primer parque : Disneyland Park-->
 <br>
 <br>
-<div class="container w-75">
+<div class="container w-75" id="disneyland-park">
 <h2 classs="text-center">Disneyland</h2>
 <p>
   <strong>¡Aquí comenzó todo!</strong> Es el parque original de Walt Disney y abrió en 1955.<br>
@@ -169,20 +187,20 @@ Aquí encontrarás pura magia y nostalgia. Puedes cruzarte con tus personajes fa
 
 <br>
 <br>
-<h3>Las atracciones que no te puedes perder</h3>
+<h3>¡Las atracciones que no te puedes perder!</h3>
 <br>
 <br>
 
 <!--Cards atracciones Disneyland-->
 
-<div class="container text-center">
+<div class="container text-center" id="atracciones-disneyland">
   <div class="row">
     <div class="col">
 <div class="card" style="width: 18rem;">
   <img src="assets/space-mountain.jpg" class="card-img-top" alt="Atracción Space Mountain">
   <div class="card-body">
     <h5 class="card-title">Space Mountain</h5>
-    <p class="card-text">Una montaña rusa a oscuras que está buenísima si te gustan las emociones fuertes</p>
+    <p class="card-text">Una montaña rusa a oscuras que está buenísima si te gustan las emociones fuertes.</p>
     <a href="https://www.youtube.com/watch?v=Omh0Rr3rSBk" class="btn btn-primary">Video</a>
   </div>
 </div>
@@ -192,7 +210,7 @@ Aquí encontrarás pura magia y nostalgia. Puedes cruzarte con tus personajes fa
   <img src="assets/Big_Thunder_Mountain_Train.jpg" class="card-img-top" alt="Atracción Big Thunder Mountain Railroad">
   <div class="card-body">
     <h5 class="card-title">Big Thunder Mountain Railroad</h5>
-    <p class="card-text">Una montaña rusa divertida y rápida, perfecta para pasarla bien</p>
+    <p class="card-text">Una montaña rusa divertida y rápida, perfecta para pasarla bien.</p>
     <a href="https://www.youtube.com/watch?v=dVEN1AnDbM0" class="btn btn-primary">Video</a>
   </div>
 </div>
@@ -202,7 +220,7 @@ Aquí encontrarás pura magia y nostalgia. Puedes cruzarte con tus personajes fa
   <img src="assets/starwars-rise of the resis.jpg" class="card-img-top" alt="Atracción Star Wars">
   <div class="card-body">
     <h5 class="card-title">Star Wars: Rise of the Resistance</h5>
-    <p class="card-text">Si eres fan de Star Wars, se siente como estar dentro de la película</p>
+    <p class="card-text">Si eres fan de Star Wars, se siente como estar dentro de la película.</p>
     <a href="https://www.youtube.com/watch?v=dUwFxXBrr7s" class="btn btn-primary">Video</a>
   </div>
 </div>
@@ -215,17 +233,17 @@ Aquí encontrarás pura magia y nostalgia. Puedes cruzarte con tus personajes fa
 
 <!--Cards tierras temáticas Disneyland-->
 
-<h3>Tierras temáticas</h3>
+<h3>Tierras temáticas imperdibles...</h3>
 <br>
 <br>
-<div class="container text-center">
+<div class="container text-center" id="tierras-disneyland">
   <div class="row">
     <div class="col">
 <div class="card" style="width: 18rem;">
   <img src="assets/fantasyland.jpg" class="card-img-top" alt="Tierra FantasyLand">
   <div class="card-body">
     <h5 class="card-title">FantasyLand</h5>
-    <p class="card-text">Un lugar súper bonito y clásico, especialmente si te encanta Disney</p>
+    <p class="card-text">Un lugar súper bonito y clásico, especialmente si te encanta Disney.</p>
     <a href="https://www.youtube.com/watch?v=YVSo5McsK88" class="btn btn-primary">Video</a>
   </div>
 </div>
@@ -235,7 +253,7 @@ Aquí encontrarás pura magia y nostalgia. Puedes cruzarte con tus personajes fa
   <img src="assets/star wars galayxs edge.jpg" class="card-img-top" alt="Tierra Star Wars">
   <div class="card-body">
     <h5 class="card-title">Star Wars: Galaxy´s Edge</h5>
-    <p class="card-text">Se siente como entrar directamente al universo de Star Wars</p>
+    <p class="card-text">Se siente como entrar directamente al universo de Star Wars.</p>
     <a href="https://www.youtube.com/watch?v=3ZhYHheYadQ" class="btn btn-primary">Video</a>
   </div>
 </div>
@@ -259,7 +277,7 @@ Aquí encontrarás pura magia y nostalgia. Puedes cruzarte con tus personajes fa
 
 <!--Segundo parque-->
 
-<div class="container w-75">
+<div class="container w-75" id="Disney-california-adventure">
 <h2>Disney California Adventure Park</h2>
 <p>Este parque es pura adrenalina y diversión moderna. Aquí te metes de lleno en el mundo de los Avengers para entrenar con superhéroes, viajas a la ruta 66 en Cars Land y disfrutas de atracciones increíbles en Pixar Pier. ¡Tiene un ambiente enérgico que te va a fascinar!</p>
 
@@ -295,14 +313,14 @@ Aquí encontrarás pura magia y nostalgia. Puedes cruzarte con tus personajes fa
 
 <!--Cards atracciones Disney California Adventure Park-->
 
-<div class="container text-center">
+<div class="container text-center" id="atracciones-disney-california">
   <div class="row">
     <div class="col">
 <div class="card" style="width: 18rem;">
   <img src="assets/Incredicoaster.jpg" class="card-img-top" alt="Atracción Incredicoaster">
   <div class="card-body">
     <h5 class="card-title">Incrediscoaster</h5>
-    <p class="card-text">Definitivamente mi favorita. Súper rápida y emocionante</p>
+    <p class="card-text">Definitivamente mi favorita. Súper rápida y emocionante.</p>
     <a href="https://www.youtube.com/watch?v=L_VcRlkVL44" class="btn btn-primary">Video</a>
   </div>
 </div>
@@ -312,7 +330,7 @@ Aquí encontrarás pura magia y nostalgia. Puedes cruzarte con tus personajes fa
   <img src="assets/radiator springs racer.jpg" class="card-img-top" alt="Atracción Radiator Springs Racers">
   <div class="card-body">
     <h5 class="card-title">Radiator Springs Racers</h5>
-    <p class="card-text">Una carrera por Radiator Springs que se disfruta muchísimo</p>
+    <p class="card-text">Una carrera por Radiator Springs que se disfruta muchísimo.</p>
     <a href="https://www.youtube.com/watch?v=NkJRM55tujM" class="btn btn-primary">Video</a>
   </div>
 </div>
@@ -322,7 +340,7 @@ Aquí encontrarás pura magia y nostalgia. Puedes cruzarte con tus personajes fa
   <img src="assets/guardians of the galaxy mission breakout.jpg" class="card-img-top" alt="Atracción Mission: BREAKOUT de Guardians of the Galaxy">
   <div class="card-body">
     <h5 class="card-title">Guardians of the galaxy - Mission: BREAKOUT!</h5>
-    <p class="card-text">Caídas, música y mucha diversión; esta sí te saca un buen grito</p>
+    <p class="card-text">Caídas, música y mucha diversión; esta sí te saca un buen grito.</p>
     <a href="https://www.youtube.com/watch?v=WLSH_5WAGIw" class="btn btn-primary">video</a>
   </div>
 </div>
@@ -335,18 +353,18 @@ Aquí encontrarás pura magia y nostalgia. Puedes cruzarte con tus personajes fa
 
 <!--Cards tierras temáticas Disney California Adventure Park-->
 
-<h3>Tierras temáticas</h3>
+<h3>Tierras temáticas que debes visitar...</h3>
 <br>
 <br>
 
-<div class="container text-center">
+<div class="container text-center" id="tierras-disney-california">
   <div class="row">
     <div class="col">
 <div class="card" style="width: 18rem;">
   <img src="assets/cars land.jpg" class="card-img-top" alt="Tierra Cars Land">
   <div class="card-body">
     <h5 class="card-title">Cars Land</h5>
-    <p class="card-text">Todo parece sacado de la película y está increíble para recorrerlo</p>
+    <p class="card-text">Todo parece sacado de la película y está increíble para recorrerlo.</p>
     <a href="#" class="btn btn-primary">Video</a>
   </div>
 </div>
@@ -366,7 +384,7 @@ Aquí encontrarás pura magia y nostalgia. Puedes cruzarte con tus personajes fa
   <img src="assets/pixar pier.jpg" class="card-img-top" alt="Tierra Pixar Pier">
   <div class="card-body">
     <h5 class="card-title">Pixar Pier</h5>
-    <p class="card-text">Un lugar muy divertido y colorido, perfecto si eres fan de Pixar</p>
+    <p class="card-text">Un lugar muy divertido y colorido, perfecto si eres fan de Pixar.</p>
     <a href="#" class="btn btn-primary">Video</a>
   </div>
 </div>
@@ -377,11 +395,64 @@ Aquí encontrarás pura magia y nostalgia. Puedes cruzarte con tus personajes fa
  <br>
  <br>
 
+<!--Footer-->
+
 <footer class="navbar-disney">
-<p>© 2026 Recomendando con Marce</p>
+
+  <div class="footer-container">
+
+    <!-- Inicio -->
+    <div class="footer-column">
+      <h4>Inicio</h4>
+      <a href="#inicio">Página principal</a>
+    </div>
+
+    <!-- Parques -->
+    <div class="footer-column">
+      <h4>Parques</h4>
+      <a href="#disneyland-park">Disneyland</a>
+      <a href="#Disney-california-adventure">
+        Disney California Adventure Park
+      </a>
+    </div>
+
+    <!-- Atracciones -->
+    <div class="footer-column">
+      <h4>Atracciones</h4>
+      <a href="#atracciones-disneyland">Disneyland</a>
+      <a href="#atracciones-disney-california">
+        Disney California Adventure Park
+      </a>
+    </div>
+
+    <!-- Tierras temáticas -->
+    <div class="footer-column">
+      <h4>Tierras temáticas</h4>
+      <a href="#tierras-disneyland">Disneyland</a>
+      <a href="#tierras-disney-california">
+        Disney California Adventure Park
+      </a>
+    </div>
+
+  </div>
+
+  <p>
+    © 2026 Marce recomienda...<br>
+    🏰 🧚🏻‍♀️✨🎡
+  </p>
+
 </footer>
 
-<script src="app.js"></script>
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
